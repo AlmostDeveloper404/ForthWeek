@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         _coinManager = CoinManager.instance;
-        for (int i = 0; i < 40; i++)
+        for (int i = 0; i < 15; i++)
         {
             
             Transform coinGO= Instantiate(coin,new Vector3(Random.Range(-48f, 48f), transform.position.y+1.5f, Random.Range(-48f, 48f)),coin.rotation);

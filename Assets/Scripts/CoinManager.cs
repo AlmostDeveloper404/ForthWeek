@@ -28,6 +28,14 @@ public class CoinManager :MonoBehaviour
         coins.Remove(coin);
     }
 
+
+    private void Update()
+    {
+        if (coins.Count==0)
+        {
+            GameManager.instance.Win();
+        }
+    }
     public Vector3 NearestCoin(Transform ball)
     {
 
